@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -9,6 +10,7 @@ body {
   font-size: 16px;
   color: var(--color);
   background-color: var(--background);
+
 }
 
 header {
@@ -23,6 +25,16 @@ header {
   cursor: pointer;
 } */
 
+/* Felippe added this for the diary */
+.slippy-diary {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-diary {
+  margin-top: 0;
+}
 
 .bedroom-image
  {

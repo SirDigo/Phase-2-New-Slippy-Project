@@ -1,9 +1,10 @@
 import React from "react";
+import Journal from "./Journal";
 
 function App () {
     return(
         <div>
-            hi
+            <Journal />
         </div>
     );
 }
