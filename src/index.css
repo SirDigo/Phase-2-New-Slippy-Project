@@ -63,15 +63,14 @@ h1 {
 };
 /* Felippe added this for the diary */
 .slippy-diary {
-  background-position: left;
-  background-repeat: no-repeat;
+  background-position: center;
+  background-repeat:no-repeat;
   background-size: cover; 
   text-align: center;
-
 }
 
 .slippy-face {
-  margin-left:-550px;
+  margin-left:-100px;
   height:150px ;
   width: 150px;
   margin-top: 0;
@@ -96,7 +95,7 @@ h1 {
   font-family: cursive;
   font-size: large;
   display: center;
-  margin-left: 600px;
+  margin-left: -200px;
 }
 h2 {
   text-align: center;
