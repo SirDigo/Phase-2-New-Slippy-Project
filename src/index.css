@@ -61,3 +61,46 @@ h1 {
 	margin: 1;
 	padding: 1;
 };
+/* Felippe added this for the diary */
+.slippy-diary {
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  text-align: center;
+
+}
+
+.slippy-face {
+  margin-left:-550px;
+  height:150px ;
+  width: 150px;
+  margin-top: 0;
+}
+h1 {
+  text-align: center;
+  padding: 1px;
+  margin-left: 300px;
+  font-family: cursive;
+}
+.top-diary {
+  align-self: center;
+  font-family: cursive;
+  font-size: large;
+  display: center;
+  border-spacing: 20px;
+  text-align: center;
+  margin-left: 420px;
+  padding: 50px;
+}
+.new-entry-form {
+  font-family: cursive;
+  font-size: large;
+  display: center;
+  margin-left: 600px;
+}
+h2 {
+  text-align: center;
+  padding: 0px;
+  margin-left: -250px;
+  font-family: cursive;
+}
