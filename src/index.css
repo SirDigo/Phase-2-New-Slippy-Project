@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  padding: 1rem;
+  padding: 0.5rem;
   display: block;
   justify-content: space-between;
   align-content: center;
@@ -23,13 +23,16 @@ header {
   cursor: pointer;
 } */
 
+h1 {
+  color: rgb(66, 23, 97);
+}
 
 .bedroom-image
  {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 80%;
 }
 
 .livingroom-image
@@ -47,3 +50,14 @@ header {
   margin-right: auto;
   width: 50%;
 }
+
+.NavBar div {
+  margin: 0.05rem;
+}
+
+.navlink
+{
+  list-style-type: none;
+	margin: 1;
+	padding: 1;
+};
