@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import JournalEntryForm from "./JournalEntryForm";
 import EntryList from "./EntryList"; 
+import background from "./Pixel_diary.png";
+
 
 function Journal (){
   
@@ -21,10 +23,10 @@ function Journal (){
   }, [],)
 
   return (
-    <> 
+    <div className="slippy-diary" style={{ backgroundImage: `url(${background})` }}>
            <EntryList entries={entries}/>
            <JournalEntryForm addEntry={addEntry}/>
-          </>
+           </div>
   );
 }
 

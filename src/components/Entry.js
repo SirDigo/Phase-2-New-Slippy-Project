@@ -4,7 +4,7 @@ import React from "react";
 function Entry ({entry}){
 console.log(entry)
   return (
-    <tr>
+    <tr className="table-content">
     <td>{entry.date}</td>
     <td>{entry.entry}</td>
     <td>

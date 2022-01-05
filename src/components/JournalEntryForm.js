@@ -26,11 +26,10 @@ function handleSubmit (e) {
   .then (data => addEntry(data) )
 
   }
-
   return (
-    <div className="new-entry-form">
-      <h2>Slippy's Journal </h2>
-      <form onSubmit={handleSubmit}>
+    <div  >
+      <h2 >What is Slippy doing next? </h2>
+      <form className="new-entry-form" onSubmit={handleSubmit}>
         <input onChange={handleOnChange} value={formData.date} type="date" name="date" placeholder="YYYY-MM-DD" />
         <input onChange={handleOnChange} value={formData.entry} type="text" name="entry" placeholder="Entry" />
         <button type="submit">Add Entry</button>
