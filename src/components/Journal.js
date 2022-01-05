@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import JournalEntryForm from "./JournalEntryForm";
 import EntryList from "./EntryList"; 
-import background from "../images/Pixel_diary.png";
-
+import image from "../images/Pixel_diary.png";
 
 function Journal (){
   
@@ -23,21 +22,13 @@ function Journal (){
   }, [],)
 
   return (
-    <div className="slippy-diary" style={{ backgroundImage: `url(${background})` }}>
-    {/* // <div className="slippy-diary" style={{backgroundImage: `url("https://image.pngaaa.com/905/2624905-middle.png")`  */}
-    {/* // }}> */}
+    <div className="slippy-diary" style={{ backgroundImage: `url(${image})`, backgroundRepeat:"no-repeat", backgroundPosition: "center", backgroundSize: "cover", textAlign: "center" }}>
+    {/* // <div className="slippy-diary" style={{backgroundImage: `url("https://image.pngaaa.com/905/2624905-middle.png")` }}> */}
 
            <EntryList entries={entries}/>
            <JournalEntryForm addEntry={addEntry}/>
            </div>
   );
 }
-
-
-
-
-
-
-
 
 export default Journal;
