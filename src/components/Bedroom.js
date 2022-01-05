@@ -1,8 +1,11 @@
 import React, { useState }from "react";
+import { useMousePosition } from "./useMousePosition";
+// import Livingroom from "./Livingroom";
+import { Redirect } from "react-router-dom";
+
 import grayBedroom from "../images/GrayScaleBedroom.gif";
 import idleBedroom from "../images/IdleBedroom.gif";
 import computerBedroom from "../images/ComputerBedroom.gif";
-import { useMousePosition } from "./useMousePosition";
 
 function Bedroom() {
   
@@ -25,9 +28,12 @@ function Bedroom() {
     } else if (x < 1376 && y < 541 && x > 1182 && y > 366 && !darkMode) {
       setDarkMode(true);
       setBedroomAnimation(grayBedroom);
-    }
+    } 
+    // else if (!darkMode) {
+    //   return <Redirect to="/livingroom" component={Livingroom}/>
+    // }
   }
-  
+  //x < 1112 && y < 970 && x > 796 && y > 892 && 
   return (
     <div style={{backgroundColor: darkMode ? "#2E282A" : "white"}}>
       <div>
