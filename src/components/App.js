@@ -4,6 +4,7 @@ import Header from "./Header";
 import Bedroom from "./Bedroom";
 import LivingRoom from "./LivingRoom";
 import Journal from "./Journal";
+import Garden from "./Garden";
 import { Route, Switch } from 'react-router-dom'
 
 function App () {
@@ -26,6 +27,10 @@ function App () {
             <Route 
             path="/journal"
             component={Journal}
+            />
+            <Route 
+            path="/garden"
+            component={Garden}
             />
         </Switch>
         </div>
