@@ -8,7 +8,7 @@ body {
   font-family: "Fira Code", monospace;
   font-size: 16px;
   color: var(--color);
-  background-color: var(--background);
+  background-color: "var(--background)";
 }
 
 header {
@@ -51,16 +51,28 @@ h1 {
   width: 50%;
 }
 
-.NavBar div {
-  margin: 0.05rem;
+.navbar{
+  text-align: center;
+  font-size: 200%;
 }
 
-.navlink
+li {
+  font-family: 'Common Pixel', sans-serif;
+  display: inline;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+
+/* .navlink
 {
   list-style-type: none;
 	margin: 1;
 	padding: 1;
-};
+}; */
+
+
 /* Felippe added this for the diary */
 .slippy-diary {
   background-position: center;
@@ -79,11 +91,11 @@ h1 {
   text-align: center;
   padding: 1px;
   margin-left: 300px;
-  font-family: cursive;
+  font-family: 'Common Pixel', sans-serif;
 }
 .top-diary {
   align-self: center;
-  font-family: cursive;
+  font-family: 'Common Pixel', sans-serif;
   font-size: large;
   display: center;
   border-spacing: 20px;
@@ -92,7 +104,7 @@ h1 {
   padding: 50px;
 }
 .new-entry-form {
-  font-family: cursive;
+  font-family: 'Common Pixel', sans-serif;
   font-size: large;
   display: center;
   margin-left: -200px;
@@ -101,5 +113,5 @@ h2 {
   text-align: center;
   padding: 0px;
   margin-left: -250px;
-  font-family: cursive;
+  font-family: 'Common Pixel', sans-serif;
 }
