@@ -1,32 +1,43 @@
-import React, { useState, useEffect } from "react";
-import Entry from "./Entry";
+import React, { useEffect, useState } from "react";
 import JournalEntryForm from "./JournalEntryForm";
+import EntryList from "./EntryList"; 
+import background from "../images/Pixel_diary.png";
+
 
 function Journal (){
-const [entries, setEntries] = useState ([])
-
-useEffect (() => {
-    return (
-      fetch("http://localhost:3000/entries")
-    .then((r) => r.json())
-    .then(data => data.map(entry => console.log(entry)))
-    )})
+  
+  const [entries, setEntries] = useState ([])
 
   function addEntry(newEntry){
-    const newEntryList = [newEntry, ...entries]
+    const newEntryList = [ ...entries, newEntry,]
     setEntries(newEntryList)
   }
 
-//   {
-//       // <Entry key={entry.id} props={entry} />;
-//     })
-//   }
+
+  useEffect (() => {
+    fetch("http://localhost:3000/entries")
+    .then((r) => r.json())
+    .then (data => {
+      //doing this so the entries are loaded in the page.
+      setEntries(data)});
+  }, [],)
+
   return (
-    <div>
-      <Entry props={entries}/>
-      <JournalEntryForm addEntry={addEntry}/>
-      hi
-    </div>
+    <div className="slippy-diary" style={{ backgroundImage: `url(${background})` }}>
+    {/* // <div className="slippy-diary" style={{backgroundImage: `url("https://image.pngaaa.com/905/2624905-middle.png")`  */}
+    {/* // }}> */}
+
+           <EntryList entries={entries}/>
+           <JournalEntryForm addEntry={addEntry}/>
+           </div>
   );
 }
+
+
+
+
+
+
+
+
 export default Journal;

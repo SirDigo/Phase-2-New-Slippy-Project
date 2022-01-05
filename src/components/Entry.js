@@ -1,15 +1,16 @@
 import React from "react";
 
-function Entry (props){
-  const [date, entry] = props
+
+function Entry ({entry}){
+console.log(entry)
   return (
-    <li> 
-        <div>
-            <h4>{date}</h4>
-            <p>{entry}</p>
-        </div>
-    </li>
-  );
+    <tr className="table-content">
+    <td>{entry.date}</td>
+    <td>{entry.entry}</td>
+    <td>
+    </td>
+  </tr>
+);
 }
 
 export default Entry;
