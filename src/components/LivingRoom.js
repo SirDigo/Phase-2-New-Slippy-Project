@@ -27,7 +27,7 @@ function LivingRoom() {
         <div>
           {x}:{y}
         </div>
-        <img src={livingRoomAnimation} alt="livingroom" className="livingroom-image" onClick={handleSwitch}/>
+        <img src={livingRoomAnimation} alt="livingroom" className="bedroom-image" onClick={handleSwitch}/>
       </div>
     );
   }
