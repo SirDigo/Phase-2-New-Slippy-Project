@@ -1,4 +1,4 @@
-import React, { useState }from "react";
+import React, { useState } from "react";
 import { useMousePosition } from "./useMousePosition";
 
 import idleLivingRoom from "../images/IdleLivingRoom.gif";
@@ -20,13 +20,14 @@ function LivingRoom() {
       } else if (x < 1376 && y < 541 && x > 1182 && y > 366) {
         setLivingRoomAnimation(pixelDiary);
       } 
+    }
 
     return (
-      <div style={{backgroundColor: darkMode ? "#2E282A" : "white"}}>
+      <div>
         <div>
           {x}:{y}
         </div>
-        <img src={bedroomAnimation} alt="bedroom" className="bedroom-image" onClick={handleSwitch}/>
+        <img src={livingRoomAnimation} alt="livingroom" className="livingroom-image" onClick={handleSwitch}/>
       </div>
     );
   }
