@@ -13,6 +13,7 @@ const entryList = entries.map((entry) => (
 
   return (
     // <div className="slippy-diary" style={{ backgroundImage: `url(${background})` }}>
+    
     <div> 
         <h1><img className="slippy-face" src={image} alt="Slippy"  />Slippy's Journal</h1>
     <table className="top-diary" >

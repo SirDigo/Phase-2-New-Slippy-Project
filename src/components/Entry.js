@@ -18,7 +18,7 @@ console.log(entry)
     <tr className="table-content">
     <td>{entry.date}</td>
     <td>{entry.entry}</td>
-    <td><button type="button" onClick={(e) => deleteEntry(e)} style={{ background:"none", fontFamily:"cursive", borderRadius:"60px", cursor:"pointer", boxShadow: "0 0 5px #2ba805"  }}>Remove from Journal</button>
+    <td><button type="button" onClick={(e) => deleteEntry(e)} style={{ backgroundColor:"#FFD447", fontFamily:'Common Pixel', borderRadius:"60px", cursor:"pointer", boxShadow: "0 0 5px #2ba805"  }}>Regret</button>
     </td>
   </tr>
 );
