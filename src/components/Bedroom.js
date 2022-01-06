@@ -19,10 +19,10 @@ function Bedroom() {
   let history = useHistory();
 
   function handleSwitch() {
-    if (x < 1107 && y < 357 && x > 930 && y > 295 && darkMode) {
+    if (x < 521 && y < 163 && x > 427 && y > 131 && darkMode) {
       setDarkMode(false);
       setBedroomAnimation(idleBedroom);
-      console.log(x, y);
+      // console.log(x, y);
     } else if (x < 832 && y < 457 && x > 612 && y > 285 && !darkMode) {
       setBedroomAnimation(computerBedroom);
     } else if (x < 1090 && y < 770 && x > 716 && y > 623 && !darkMode) {
@@ -33,8 +33,11 @@ function Bedroom() {
     } else if (x < 1112 && y < 970 && x > 796 && y > 892 && !darkMode) {
       history.push("/livingroom")
     } 
-    
   }
+
+
+
+  
   // 
   return (
     <div style={{backgroundColor: darkMode ? "#2E282A" : "white"}}>

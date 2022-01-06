@@ -17,10 +17,6 @@ function App () {
             component={About}
             />
             <Route 
-            path="/bedroom"
-            component={Bedroom}
-            />
-            <Route 
             path="/livingroom"
             component={LivingRoom}
             />
@@ -31,6 +27,10 @@ function App () {
             <Route 
             path="/garden"
             component={Garden}
+            />
+            <Route 
+            path="/"
+            component={Bedroom}
             />
         </Switch>
         </div>
