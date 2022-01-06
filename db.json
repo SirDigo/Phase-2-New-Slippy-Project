@@ -2,73 +2,63 @@
   "entries": [
     {
       "id": 1,
-      "date": "11/22/2021",
+      "date": "2021-11-22",
       "entry": "Start the bootcamp and get to know awesome people in my cohort."
     },
     {
       "id": 2,
-      "date": "11/25/2021",
+      "date": "2021-11-25",
       "entry": "Take a break from lecture and catchup with all the pending labs."
     },
     {
       "id": 3,
-      "date": "11/29/2021",
+      "date": "2021-11-29",
       "entry": "Back to the bootcamp after eating tons of turkeys during ThanksGiving."
     },
     {
       "id": 4,
-      "date": "12/06/2021",
+      "date": "2021-12-06",
       "entry": "Code challenge week! Study as if your life depended on it. Blog post"
     },
     {
       "id": 5,
-      "date": "12/13/2021",
+      "date": "2021-12-13",
       "entry": "Starting phase 2. Introduction to React with Louis."
     },
     {
       "id": 6,
-      "date": "12/20/2021",
+      "date": "2021-12-20",
       "entry": "Code challenge week! Need to get confortable with State & Events. "
     },
     {
       "id": 7,
-      "date": "12/22/2021",
+      "date": "2021-12-22",
       "entry": "Mock code challenge. Last chance to learn State & Events."
     },
     {
       "id": 8,
-      "date": "12/23/2021",
+      "date": "2021-12-23",
       "entry": "Code Challenge day. Wtf is State & Events? :( "
     },
     {
       "id": 9,
-      "date": "12/27/2021",
+      "date": "2021-12-27",
       "entry": "I passed the challenge! Taking a week break."
     },
     {
       "id": 10,
-      "date": "01/03/2022",
+      "date": "2022-01-03",
       "entry": "Back in business! Become a Software Engineer in 2022."
     },
     {
       "id": 11,
-      "date": "01/05/2022",
+      "date": "2022-01-05",
       "entry": "Present Sleepy's MVP to DJ and cohort."
     },
     {
       "id": 12,
-      "date": "2022-01-20",
-      "entry": "Slippy Ate some kale"
-    },
-    {
-      "id": 13,
-      "date": "2022-01-21",
-      "entry": "Slippy Ate some kale"
-    },
-    {
-      "id": 14,
-      "date": "",
-      "entry": ""
+      "date": "2022-01-07",
+      "entry": "TOM HOLLAND is the BEST SPIDER MAN"
     }
   ]
 }
