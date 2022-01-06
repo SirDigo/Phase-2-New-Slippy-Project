@@ -7,6 +7,13 @@ function Journal (){
   
   const [entries, setEntries] = useState ([])
 
+  function handleDeleteEntry(deletedEntry) {
+    console.log('I regret this')
+    setEntries(entries.filter(entry => entry !== deletedEntry))
+  }
+
+  const visibleEntries = entries.filter(entry => entry.id !== entry)
+
   function addEntry(newEntry){
     const newEntryList = [ ...entries, newEntry,]
     setEntries(newEntryList)
@@ -25,7 +32,7 @@ function Journal (){
     <div className="slippy-diary" style={{ backgroundImage: `url(${image})`, backgroundRepeat:"no-repeat", backgroundPosition: "center", backgroundSize: "cover", textAlign: "center" }}>
     {/* // <div className="slippy-diary" style={{backgroundImage: `url("https://image.pngaaa.com/905/2624905-middle.png")` }}> */}
 
-           <EntryList entries={entries}/>
+           <EntryList entries={visibleEntries} handleDeleteEntry={handleDeleteEntry}/>
            <JournalEntryForm addEntry={addEntry}/>
            </div>
   );

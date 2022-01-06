@@ -30,9 +30,9 @@ function handleSubmit (e) {
     <div  >
       <h2 >What is Slippy doing next? </h2>
       <form className="new-entry-form" onSubmit={handleSubmit}>
-        <input onChange={handleOnChange} value={formData.date} type="date" name="date" placeholder="YYYY-MM-DD" />
-        <input onChange={handleOnChange} value={formData.entry} type="text" name="entry" placeholder="Entry" />
-        <button type="submit">Add Entry</button>
+        <input style={{boxShadow: "0 0 5px #2ba805"}} onChange={handleOnChange} value={formData.date} type="date" name="date" placeholder="YYYY-MM-DD" />
+        <input style={{boxShadow: "0 0 5px #2ba805"}} onChange={handleOnChange} value={formData.entry} type="text" name="entry" placeholder="Entry" />
+        <button style={{ backgroundColor:"orange", fontFamily:"cursive", borderRadius:"60px", cursor:"pointer", boxShadow: "0 0 5px #2ba805"  }} type="submit">Add Entry</button>
       </form>
     </div>
   );

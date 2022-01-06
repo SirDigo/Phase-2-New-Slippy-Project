@@ -2,9 +2,15 @@ import React from "react";
 import Entry from "./Entry";
 import image from "../images/SlippyTWO.png";
 
+
 // import background from "./Pixel_diary.png";
 
-function EntryList({ entries }) {
+function EntryList({ entries, handleDeleteEntry }) {
+
+const entryList = entries.map((entry) => (
+  <Entry key={entry.id} date={entry.date} entry={entry} handleDeleteEntry={handleDeleteEntry}/>
+))
+
   return (
     // <div className="slippy-diary" style={{ backgroundImage: `url(${background})` }}>
     <div> 
@@ -17,9 +23,10 @@ function EntryList({ entries }) {
         </tr>
         { 
           //render Entry here
-          entries.map(entry => {
-            return <Entry key={entry.id} entry={entry}/>;
-          })
+          // entries.map(entry => {
+          //   return <Entry key={entry.id} entry={entry}/>;
+          // })
+          entryList
         }
       </tbody>
     </table>
