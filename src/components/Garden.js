@@ -16,11 +16,11 @@ function Garden() {
     //  let history = useHistory();
 
     // function handleSwitch() {
-    //     if (x < 832 && y < 457 && x > 612 && y > 285) {
-    //         setGardenAnimation(placeHolder);
+    //     if (x < 1376 && y < 541 && x > 1182 && y > 366) {
+    //         setLivingRoomAnimation(blanketGarden);
     //     } else if (x < 1090 && y < 770 && x > 716 && y > 623) {
-    //         setGardenAnimation(placeHolder);
-    //     } else if (x < 1112 && y < 970 && x > 796 && y > 892 {
+    //         setGardenAnimation(wateringGarden);
+    //     } else if (x < 1107 && y < 357 && x > 930 && y > 295 {
     //          history.push("/livingroom")
     //     } 
     //   }
