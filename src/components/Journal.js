@@ -9,7 +9,8 @@ function Journal (){
 
   function handleDeleteEntry(deletedEntry) {
     console.log('I regret this')
-    setEntries(entries.filter(entry => entry !== deletedEntry))
+    const newFilteredList = entries.filter(entry => entry !== deletedEntry)
+    setEntries(newFilteredList)
   }
 
   const visibleEntries = entries.filter(entry => entry.id !== entry)
