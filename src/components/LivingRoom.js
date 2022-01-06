@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useMousePosition } from "./useMousePosition";
-
+import { useHistory } from "react-router-dom";
 import idleLivingRoom from "../images/IdleLivingRoom.gif";
 import tvLivingRoom from "../images/TVLivingRoom.gif";
-import pixelDiary from "../images/Pixel_diary.png";
 
 function LivingRoom() {
     const [livingRoomAnimation, setLivingRoomAnimation] = useState(idleLivingRoom)
@@ -11,14 +10,20 @@ function LivingRoom() {
     const position = useMousePosition();
     const x = position.x;
     const y = position.y;
+
+    let history = useHistory();
   
     function handleSwitch() {
-      if (x < 832 && y < 457 && x > 612 && y > 285) {
-        setLivingRoomAnimation(idleLivingRoom);
-      } else if (x < 1090 && y < 770 && x > 716 && y > 623) {
+      if (x < 690 && y < 312 && x > 519 && y > 242) {
         setLivingRoomAnimation(tvLivingRoom);
-      } else if (x < 1376 && y < 541 && x > 1182 && y > 366) {
-        setLivingRoomAnimation(pixelDiary);
+      } else if (x < 483 && y < 457 && x > 425 && y > 401) {
+        history.push("/journal");
+      } 
+      else if (x < 1223 && y < 652 && x > 1104 && y > 558) {
+        history.push("/bedroom");
+      } 
+      else if (x < 813 && y < 788 && x > 626 && y > 712) {
+        history.push("/garden");
       } 
     }
 
