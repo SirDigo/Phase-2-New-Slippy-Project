@@ -10,29 +10,29 @@ import { Route, Switch } from 'react-router-dom'
 function App () {
     return(
         <div>
-          <Header />
-          <Switch>
-            <Route 
-            path="/about"
-            component={About}
-            />
-            <Route 
-            path="/livingroom"
-            component={LivingRoom}
-            />
-            <Route 
-            path="/journal"
-            component={Journal}
-            />
-            <Route 
-            path="/garden"
-            component={Garden}
-            />
-            <Route 
-            path="/"
-            component={Bedroom}
-            />
-        </Switch>
+            <Header />
+            <Switch>
+                <Route 
+                path="/about"
+                component={About}
+                />
+                <Route 
+                path="/livingroom"
+                component={LivingRoom}
+                />
+                <Route 
+                path="/journal"
+                component={Journal}
+                />
+                <Route 
+                path="/garden"
+                component={Garden}
+                />
+                <Route 
+                path="/"
+                component={Bedroom}
+                />
+            </Switch>
         </div>
     );
 }
