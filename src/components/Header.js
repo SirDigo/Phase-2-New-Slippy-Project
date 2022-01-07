@@ -10,7 +10,6 @@ function Header() {
       <div className="navbar" style={{backgroundColor: "#FFD447"}}>
         <li style={myStyle}><a style={{color: "#372F32"}} href="/about">About</a></li>
         <li style={myStyle}><a style={{color: "#372F32"}} href="/bedroom">Bedroom</a></li>
-        <li style={myStyle}><a style={{color: "#372F32"}} href="/livingroom">Living room</a></li>
         <li style={myStyle}><a style={{color: "#372F32"}} href="/journal">Journal</a></li>
     </div>
   );

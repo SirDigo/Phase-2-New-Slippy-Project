@@ -17,9 +17,10 @@ function Bedroom() {
   const position = useMousePosition();
   const x = position.x;
   const y = position.y;
+  
 
   let history = useHistory();
-
+  
   function handleSwitch() {
     if (x < 1107 && y < 357 && x > 930 && y > 295 && darkMode) {
       setDarkMode(false);

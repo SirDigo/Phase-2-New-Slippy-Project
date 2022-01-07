@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 import idleLivingRoom from "../images/IdleLivingRoom.gif";
 import tvLivingRoom from "../images/TVLivingRoom.gif";
 
-function LivingRoom() {
+function LivingRoom({ handleSleep }) {
     const [livingRoomAnimation, setLivingRoomAnimation] = useState(idleLivingRoom)
   
     const position = useMousePosition();
@@ -14,15 +14,17 @@ function LivingRoom() {
     let history = useHistory();
   
     function handleSwitch() {
-      if (x < 690 && y < 312 && x > 519 && y > 242) {
+      if (x < 911 && y < 765 && x > 703 && y > 680) {
         setLivingRoomAnimation(tvLivingRoom);
-      } else if (x < 483 && y < 457 && x > 425 && y > 401) {
+      } else if (x < 1341 && y < 697 && x > 1167 && y > 608){
+        setLivingRoomAnimation(idleLivingRoom)
+      } else if (x < 667 && y < 571 && x > 554 && y > 489) {
         history.push("/journal");
       } 
-      else if (x < 1223 && y < 652 && x > 1104 && y > 558) {
+      else if (x < 1615 && y < 825 && x > 1459 && y > 689) {
         history.push("/bedroom");
       } 
-      else if (x < 813 && y < 788 && x > 626 && y > 712) {
+      else if (x < 1083 && y < 971 && x > 824 && y > 893) {
         history.push("/garden");
       } 
     }
