@@ -1,8 +1,13 @@
 # Phase-2-New-Slippy-Project
 
+A simple clicker game about a slime named Slippy. 
 
-### Contributors
 
+
+### Versions:
+React 17.0.2
+
+### Creators:
 Caleb Rodriguez
 https://github.com/SirDigo
 
